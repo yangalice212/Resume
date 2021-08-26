@@ -1,8 +1,11 @@
-$(document).ready(function () {
-  $('.cta').click(function () {
-    $('html, body').animate({
-      scrollTop: $($(this).attr("href")).offset().top
-    }, 500);
+$(function(){
+  $(".cta").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500
+    );
   });
   $(window).scroll(function () {
     if ($(this).scrollTop() > 60) {
@@ -27,6 +30,6 @@ $(document).ready(function () {
 });
 
 lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true
-})
+  resizeDuration: 200,
+  wrapAround: true,
+});
