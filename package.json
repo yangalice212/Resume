@@ -1,16 +1,30 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "homepage": "https://yangalice212.github.io/resume",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangalice212/resume-gh-pages"
+  },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3"
-  }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "babel-cli": "^6.26.0",
+    "gh-pages": "^6.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "description": ""
 }
